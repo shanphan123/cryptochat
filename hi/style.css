@@ -1,0 +1,107 @@
+/* Base setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0e0e1a;
+    font-family: 'Orbitron', sans-serif;
+    color: #e6e6ff;
+    line-height: 1.6;
+    padding: 20px;
+    background-image: radial-gradient(circle at center, #1e1e2e 0%, #0e0e1a 100%);
+    min-height: 100vh;
+}
+
+/* Neon glow headers */
+h1,
+h2,
+h3 {
+    color: #00f0ff;
+    text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff;
+}
+
+/* Glowing input fields */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    background: #12121f;
+    border: 1px solid #00f0ff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px #00f0ff, 0 0 15px #00f0ff inset;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px #00ffff, 0 0 25px #00ffff inset;
+}
+
+/* Futuristic button */
+button {
+    background: linear-gradient(90deg, #00f0ff, #2bffcb);
+    border: none;
+    color: #000;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff;
+}
+
+/* Chat container */
+.chat-box {
+    background: #1a1a2f;
+    border: 1px solid #2b2b40;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+/* Chat message bubbles */
+.message {
+    background: #222240;
+    padding: 12px 16px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border-left: 4px solid #00f0ff;
+    color: #e0e0ff;
+}
+
+.message.user {
+    background: #2a2a4a;
+    border-left-color: #ff00ff;
+    text-align: right;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00f0ff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a2f;
+}

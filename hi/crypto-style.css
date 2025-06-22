@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f1a;
+    color: #fff;
+}
+
+.crypto-row {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.crypto-card {
+    min-width: 200px;
+    background: #1a1a2e;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.crypto-card:hover {
+    transform: scale(1.05);
+}
+
+.crypto-card h2 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #d1d1d1;
+}
+
+.crypto-card h2 span {
+    color: #888;
+}
+
+.crypto-card p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 10px 0 0;
+    color: #00ffb3;
+}
+.show-crypto-btn {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    padding: 12px 28px;
+    margin: 20px;
+    background: linear-gradient(135deg, #8a2be2, #4b0082);
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(138, 43, 226, 0.4);
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.show-crypto-btn:hover {
+    background: linear-gradient(135deg, #7b68ee, #6a5acd);
+    transform: scale(1.05);
+    box-shadow: 0 6px 30px rgba(138, 43, 226, 0.6);
+}
+/* From Uiverse.io by adamgiebl */
+.cssbuttons-io-button {
+    background: #00ffb3;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #00ffb3;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+.new-agent-btn{
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            padding: 12px 28px;
+            margin: 20px;
+            background: linear-gradient(135deg, #8a2be2, #4b0082);
+            color: #ffffff;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(138, 43, 226, 0.4);
+            transition: all 0.3s ease-in-out;
+            letter-spacing: 1px;
+            text-transform: uppercase;   
+}
